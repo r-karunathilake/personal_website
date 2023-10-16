@@ -12,14 +12,14 @@
     <title>Ravindu Karunathilake | Engineer</title>
   </head>
 
-  <body class="font-nunito bg-gradient-to-b from-sky-700 h-screen
+  <body class="font-nunito bg-gradient-to-t from-sky-700 min-h-screen
                leading-relaxed antialiased selection:bg-sky-500 selection:text-sky-900">
 
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div class="lg:flex lg:justify-between lg:gap-4">
         <!-- Sidebar -->
         <header class="lg:sticky lg:top-0 lg:max-h-screen lg:flex lg:flex-col lg:justify-between lg:w-1/2 lg:py-24">
-          <div id="sidebar">
+          <div id="sidebar-top">
             <h1 class="text-4xl font-bold mb-3 sm:text-5xl lg:text-6xl"><a href="#">Ravindu Karunathilake</a></h1>
             <h2><span id="title" class="text-red-800 text-xl font-semibold tracking-tight sm:text-2xl lg:text-4xl"></span></h2> 
             <p class="mt-3 max-w-xs text-sm leading-normal sm:text-base lg:text-xl">Bridging the Hardware-Software Divide</p>
@@ -28,7 +28,7 @@
                 <li>
                   <a href="#about" class="group flex items-center active py-2">
                     <span class="nav-indicator mr-4 h-1 w-8 bg-slate-600 transition-all group-hover:w-16
-                               group-hover:bg-slate-300 group-focus-visible:w-16 group-focus-visible:bg-slate-300 motion-reduce:transition-none"></span>
+                               group-hover:bg-violet-600 group-focus-visible:w-16 group-focus-visible:bg-slate-300 motion-reduce:transition-none"></span>
                     <span class="nav-text uppercase font-bold tracking-widest group-hover:text-slate-300
                                  group-focus-visible:text-slate-300 text-xs">About</span>
                   </a>
@@ -63,7 +63,7 @@
           
           </div>
 
-          <ul class="ml-1 mt-8 flex items-center" aria-label="Social Media">
+          <ul id="sidebar-bottom" class="ml-1 mt-8 flex items-center" aria-label="Social Media">
             <li class="mr-5 text-xs">
               <span class="sr-only">Github</span>
               <a class="block hover:text-slate-300" href="https://www.github.com/r-karunathilake" target="_blank" rel="noreferrer">
@@ -92,14 +92,59 @@
             </li>
           </ul>
         </header>
-    
-
-
-
+        
         <!-- Main Section-->
-        <a href="#">
-          <h1 class="mt-20">ABOUT</h1>
-        </a>
+        <main class="pt-20 lg:w-1/2 lg:py-24">  
+          <!-- About Me -->
+          <section id="about" class="mb-16 scroll-mt-16" aria-label="About me">
+            <div class="sticky z-10 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">About</h2>
+            </div>
+
+            <div id="about-content" class="flex flex-col">
+              <div>
+                <blockquote class="mx-auto w-3/4 text-center text-sm italic font-semibold sm:w-1/2 lg:w-3/4 mb-4">
+                  <p>
+                    "...Simple is better than complex. 
+                    Complex is better than complicated..."
+                  </p>
+                  <p class="font-bold text-slate-100 text-right lg:text-slate-500">- The Zen of Python </p>
+                </blockquote>
+              </div>
+
+              <p class="mb-4 text-left">
+                I trained as an Electrical Engineer, however, my professional journey began as 
+                a firmware integration engineer, which ignited my curiosity to explore the software development field.
+                As I honed my skills over the years, I developed a deep appreciation for writing readable, efficient,
+                testable and well-documented code. 
+              </p>
+
+              <p class="mb-4 text-left">
+                When I'm not at the desk, you can find me carving the slopes on my snowboard, enjoying the moutain
+                air or exploring our pale-blue dot through my love of photography.
+              </p>
+
+            </div>
+
+          </section>
+
+          <!-- Experience -->
+          <section id="experience" class="mb-16 scroll-mt-16" aria-label="My work experience">
+            <div class="sticky z-10 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
+            </div>
+            
+            <ol class="group/list">
+
+            </ol>
+
+          </section>
+
+        </main>
       </div>
     </div>
    
