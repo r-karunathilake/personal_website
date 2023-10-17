@@ -97,7 +97,7 @@
         <main class="pt-20 lg:w-1/2 lg:py-24">  
           <!-- About Me -->
           <section id="about" class="mb-16 scroll-mt-16" aria-label="About me">
-            <div class="sticky z-10 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
                         md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
                         lg:mx-auto lg:top-auto">
               <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">About</h2>
@@ -132,16 +132,227 @@
 
           <!-- Experience -->
           <section id="experience" class="mb-16 scroll-mt-16" aria-label="My work experience">
-            <div class="sticky z-10 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
                         md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
                         lg:mx-auto lg:top-auto">
               <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
             </div>
             
-            <ol class="group/list">
+            <ol class="group/list flex flex-col">
+              <li class="mb-12">
+                <div class="group relative flex flex-col justify-between pb-1 transition md:flex-row
+                            md:flex-wrap md:gap-2 lg:flex-nowrap lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                  <!-- Hover box for large screens -->
+                  <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                              lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/50 
+                              lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                              lg:group-hover:drop-shadow-md
+                              blur-[2px]"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide
+                               text-slate-200 lg:w-1/3" aria-label="September 2021 to April 2023">
+                    Sep 2021 - Apr 2023 (FT)
+                  </header>
+                  
+                  <div class="z-10 lg:w-2/3">
+                    <!-- Job Role -->
+                    <h3 class="font-medium leading-snug text-slate-900">
+                      <!-- Job Title and Company -->
+                      <div>
+                        <a class="group/link inline-flex align-baseline leading-tight font-medium 
+                                  text-slate-200 hover:text-cyan-300 focus-visible:text-teal-300
+                                  text-base"
+                           href="https://www.ualberta.ca/engineering/electrical-computer-engineering/index.html"
+                           target="_blank" rel="noreferrer" 
+                           aria-label="Researcher at the University of Alberta">
+                          <span>
+                            Graduate Researcher |
+                            <span class="inline-block">
+                              University of Alberta
+                              <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
+                                          group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                          group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                          motion-reduce:transition-none ml-1 translate-y-px" 
+                                          xmlns="http://www.w3.org/2000/svg" 
+                                          fill="currentColor" 
+                                          viewBox="0 0 16 16" 
+                                          aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </h3>
 
+                    <!-- Job Description -->
+                    <p class="mt-2 text-sm leading-normal">
+                      As a graduate researcher, my focus was on computer-aided inverse design
+                      for structured-light-based LiDAR. I conducted an extensive review of 300+ academic papers, 
+                      developed critical Python and MATLAB scripting tools for data analysis, and contributed as a 
+                      teaching assistant. My academic performance resulted in a GPA of 3.9/4.0 after completing 15 
+                      graduate-level credits.
+                    </p>
+                    <!-- Job Skill Tags -->
+                    <ul class="mt-2 flex flex-wrap" aria-label="Key skills and technologies used">
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Python
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          MATLAB
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Research
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          GIT
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          ANSYS Lumerical
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div class="group relative flex flex-col flex-wrap justify-between pb-1 transition md:flex-row
+                            md:flex-wrap md:gap-2 lg:flex-nowrap lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                  <!-- Hover box for large screens -->
+                  <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                              lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/50 
+                              lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                              lg:group-hover:drop-shadow-md
+                              blur-[2px]"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide
+                               text-slate-200 md:w-1/2 lg:w-1/3" aria-label="May 2019 to August 2021">
+                    May 2019 - Aug 2021 (FT)
+                  </header>
+                  
+                  <div class="z-10 lg:w-2/3">
+                    <!-- Job Role -->
+                    <h3 class="font-medium leading-snug text-slate-900">
+                      <!-- Job Title and Company -->
+                      <div>
+                        <a class="group/link inline-flex align-baseline leading-tight font-medium 
+                                  text-slate-200 hover:text-cyan-300 focus-visible:text-teal-300
+                                  text-base"
+                           href="https://gdmissionsystems.ca/"
+                           target="_blank" rel="noreferrer" 
+                           aria-label="System Integration Engineer at General Dynamics Mission Systems - Canada">
+                          <span>
+                            System Integration Engineer (EIT) |
+                            <span class="inline-block">
+                              GD Mission Systems - Canada
+                              <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
+                                          group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                          group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                          motion-reduce:transition-none ml-1 translate-y-px" 
+                                          xmlns="http://www.w3.org/2000/svg" 
+                                          fill="currentColor" 
+                                          viewBox="0 0 16 16" 
+                                          aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </h3>
+
+                    <!-- Job Description -->
+                    <p class="mt-2 text-sm leading-normal">
+                      As a System Integration Engineer, I excelled in managing intricate requirement dependencies and I played a 
+                      a critical role in addressing high-priority firmware defects, conducting comprehensive code and device log investigations 
+                      for mission-critical devices. A key contribution was the implementation of Python-based automation testing, covering 
+                      80% of product functionality through scalable and unit-testable code, ultimately boosting team productivity. 
+                      Additionally, I had the opportunity to mentor a team of over 5 junior members in test design and acceptance testing through
+                      code reviews and pair-programming.
+                    </p>
+                    <!-- Job Skill Tags -->
+                    <ul class="mt-2 flex flex-wrap" aria-label="Key skills and technologies used">
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Python
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Linux
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          C++
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Agile
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          GIT
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          TCP/IP
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Test Automation
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Robot Framework
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Firmware Development
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Firmware Testing
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ol>
-
           </section>
 
         </main>
@@ -159,13 +370,14 @@
     const typed = new Typed('#title', 
                             {
                               strings: ['Engineer', 'Developer', 'Photographer'],
-                              typeSpeed: 40,
+                              typeSpeed: 60,
                               backSpeed: 0,
                               showCursor: true,
                               cursorChar: '_',
                               shuffle: true,
                               smartBackspace: false,
                               loop: true,
+                              fadeOut:true,
                             });
   </script>
 </html>
