@@ -353,21 +353,20 @@
                 </div>
               </li>
             </ol>
-
-            <!-- Link to full résumé-->
-            <div class="group text-center">
+            <!-- Link to full résumé -->
+            <div class="text-center">
               <a href="../assets/resume.pdf" role="button" 
                  aria-label="Link to my full PDF résumé"
-                 class="inline-flex items-center font-medium leading-tight
+                 class="group inline-flex items-center font-medium leading-tight
                         text-slate-200 px-3 py-2 text-sm bg-sky-700 
-                        rounded-full group-hover:text-cyan-300 
-                        group-hover:text-[0.9rem] group-hover:shadow-md 
+                        rounded-full hover:text-cyan-300 
+                        hover:text-[0.9rem] group-hover:shadow-md 
                         shadow-cyan-950 motion-reduce:transition-none
                         duration-100"
                  target="_blank">
                 <span class="whitespace-nowrap">
-                  <span class="border-b border-transparent group-hover:border-cyan-300 
-                             motion-reduce:transition-none">
+                  <span class="border-b border-transparent hover:border-cyan-300 
+                               motion-reduce:transition-none">
                     View Full Résumé
                   </span>
                  
@@ -397,19 +396,19 @@
             </div>
             
             <div id="projects-content">
-              <ol class="group/list flex flex-col justify-between align-middle md:flex-row">
+              <ol class="group/list flex flex-col justify-between align-middle">
+                <!-- Project #1 -->
                 <li class="mb-12">
-                  <div class="group relative flex flex-col justify-between pb-1 transition 
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
                               md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
                     <!-- Hover box for large screens -->
                     <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
-                                lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/50 
-                                lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
-                                lg:group-hover:drop-shadow-md
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
                                 blur-[2px]">
                     </div>
-
-                    
+            
                     <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
                       <!-- Project Main Content-->
                       <div class="z-10 w-full">
@@ -464,7 +463,7 @@
                       </div>
 
                       <!-- Project Skill Tags -->
-                      <ul class="flex justify-start z-10" 
+                      <ul class="flex flex-wrap justify-start z-10" 
                                   aria-label="Key skills and technologies used">
                         <li class="mr-2 mt-2 w-fit">
                           <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
@@ -484,6 +483,12 @@
                             Java Swing
                           </div>
                         </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            GUI Development
+                          </div>
+                        </li>
                       </ul>
                     </div>
                     
@@ -500,16 +505,553 @@
                                 src="../assets/chess_engine/chess_engine.PNG">
                   </div>                
                 </li>
+
+                <!-- Project #2 -->
+                <li class="mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          02
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      hover:text-cyan-300 focus-visible:text-teal-300
+                                    text-base"
+                                href="https://github.com/r-karunathilake/project_showcase/tree/main/Invoice_Generator"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based PDF invoice generator desktop application">
+                                <span>
+                                  Invoice Generator
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                                group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        This project involved the creation of a Python based desktop 
+                        application for the creation of professionally formatted
+                        PDF invoice documents. The GUI was implemented with
+                        PyQt6 and the PDF was formatted with fpdf2 Python library.
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            PyQt6
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            GUI Development
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50
+                                mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3
+                                md:order-first" 
+                                alt="" aria-hidden="true"
+                                loading="lazy" decoding="async"
+                                style="color: transparent"
+                                src="../assets/invoice_gen/invoice_gen_main_window.PNG">
+                  </div>                
+                </li>
+
+                <!-- Project #3 -->
+                <li class="mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          03
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      hover:text-cyan-300 focus-visible:text-teal-300
+                                    text-base"
+                                href="https://gdmissionsystems.ca/"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based audio speech quality analyzer">
+                                <span>
+                                  Speech Transmission Quality Analyzer
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                                group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Python based audio processing software for evaluating audio 
+                        quality (speech transmission index) degradation through
+                        military communication radio relays. This project required
+                        the remote interaction with testing equipment and code
+                        implementation of fundamental signal processing prin-
+                        ciples (e.g. DFT, band filters, MTF, SNR).
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Signal Processing
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Test Automation
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <div class="mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3
+                                md:order-first
+                                text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" 
+                        fill="currentColor" 
+                        class="bi bi-soundwave" 
+                        viewBox="0 0 16 16"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+
+                  </div>                
+                </li>
+
+                <!-- Project #4 -->
+                <li class="mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          04
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      hover:text-cyan-300 focus-visible:text-teal-300
+                                    text-base"
+                                href="https://github.com/r-karunathilake/project_showcase/tree/main/Optical_Component_Designer"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based PDF invoice generator desktop application">
+                                <span>
+                                  Automated Photonic Component Designer
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                                group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Engineered a Python design pipeline for novel free-form
+                        optical devices (metasurfaces) by interfacing with electro-
+                        magnetic solver API (ANSYS Lumerical), data analysis and
+                        visualization libraries (e.g. matplotlib, pandas, numpy,
+                        scipy).
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Matplotlib
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            pandas
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            NumPy
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            SciPy
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            MATLAB
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Silicon Photonics
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical FDTD
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical RCWA
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50
+                                mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3
+                                md:order-first" 
+                                alt="" aria-hidden="true"
+                                loading="lazy" decoding="async"
+                                style="color: transparent"
+                                src="../assets/optical_comp_designer/field_plot.PNG">
+                  </div>                
+                </li>
+                
+                <!-- Project #5 -->
+                <li class="mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          05
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      hover:text-cyan-300 focus-visible:text-teal-300
+                                    text-base"
+                                href="../assets/bragg_grating/Bragg_grating_design_report.pdf"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="Silicon based Bragg grating filter at 1550 nm">
+                                <span>
+                                  Silicon Bragg Grating Filter Design 
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                                group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Bragg gratings filters are a fundamental component for achieving wavelength selective functionality 
+                        in silicon photonics. In this project, the fundamental principles of designing a Bragg
+                        grating on silicon was explored. In addition, a practical filter design operating at 1550 nm is
+                        demonstrated. The proposed filter design was able to achieve a transmission of -52 dB with a
+                        bandwidth of 10 nm at 1550 nm.
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Silicon Photonics 
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical MODE
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical EME
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Coupled Mode Theory 
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50
+                                mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3
+                                md:order-first" 
+                                alt="" aria-hidden="true"
+                                loading="lazy" decoding="async"
+                                style="color: transparent"
+                                src="../assets/bragg_grating/mode_fields.jpg">
+                  </div>                
+                </li>
+
+                <!-- Project #6 -->
+                <li class="mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/50 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          06
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              Fabrication of Multilayer and MEMS Devices 
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        This project involved hands-on experience with various nanofabrication techniques such as SEM imaging, wet/dry etch-
+                        ing, mask alignment, UV lithography, ellipsometry and profilometry. The devices created include MEMS devices 
+                        such as electrostatic comb drives, rotary actuators and multilayer devices such as via chains. 
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Nanofabrication 
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            MEMS Devices
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Multilayer Devices
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <div class="flex flex-col justify-between md:order-first
+                                mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3">
+
+                      <img class="mb-5 rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50" 
+                           alt="" aria-hidden="true"
+                           loading="lazy" decoding="async"
+                           style="color: transparent"
+                           src="../assets/fabrication/spiral_comb_drive.PNG">
+
+                      <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50" 
+                           alt="" aria-hidden="true"
+                           loading="lazy" decoding="async"
+                           style="color: transparent"
+                           src="../assets/fabrication/via_chains.jpeg">
+                    </div>
+                  </div>                
+                </li>
               </ol>
             </div>
           </section>
-
         </main>
       </div>
     </div>
-   
-
-
   </body>
 
   <!-- Load library from the CDN -->
