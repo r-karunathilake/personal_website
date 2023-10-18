@@ -97,7 +97,7 @@
         <main class="pt-20 lg:w-1/2 lg:py-24">  
           <!-- About Me -->
           <section id="about" class="mb-16 scroll-mt-16" aria-label="About me">
-            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
                         md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
                         lg:mx-auto lg:top-auto">
               <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">About</h2>
@@ -132,7 +132,7 @@
 
           <!-- Experience -->
           <section id="experience" class="mb-16 scroll-mt-16" aria-label="My work experience">
-            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-slate-700/75 backdrop-blur 
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
                         md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
                         lg:mx-auto lg:top-auto">
               <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
@@ -171,7 +171,7 @@
                               <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
                                           group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
                                           group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
-                                          motion-reduce:transition-none ml-1 translate-y-px" 
+                                          motion-reduce:transition-none ml-1 -translate-y-0.5 -translate-x-1" 
                                           xmlns="http://www.w3.org/2000/svg" 
                                           fill="currentColor" 
                                           viewBox="0 0 16 16" 
@@ -263,7 +263,7 @@
                               <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
                                           group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
                                           group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
-                                          motion-reduce:transition-none ml-1 translate-y-px" 
+                                          motion-reduce:transition-none ml-1 -translate-y-0.5 -translate-x-1" 
                                           xmlns="http://www.w3.org/2000/svg" 
                                           fill="currentColor" 
                                           viewBox="0 0 16 16" 
@@ -385,6 +385,122 @@
                   </svg>
                 </span>
               </a>
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section id="projects" class="mb-16 scroll-mt-16" aria-label="My projects">
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Projects</h2>
+            </div>
+            
+            <div id="projects-content">
+              <ol class="group/list flex flex-col justify-between align-middle md:flex-row">
+                <li class="mb-12">
+                  <div class="group relative flex flex-col justify-between pb-1 transition 
+                              md:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/50 
+                                lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+
+                    
+                    <div class="flex flex-col md:ml-4 md:w-1/2 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-slate-200 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          01
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      hover:text-cyan-300 focus-visible:text-teal-300
+                                    text-base"
+                                href="https://github.com/r-karunathilake/project_showcase/tree/main/Chess_Game"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Java based chess engine">
+                                <span>
+                                  Chess Engine
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover/link:-translate-y-1 group-hover/link:translate-x-1 
+                                                group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Java based chess game with a full GUI programmed using
+                        Java Swing toolkit. Main goal of this project was to prac-
+                        tice Java based object-oriented programming (OOP) and
+                        test-driven development (JUnit4) skills. The chess game
+                        provides functionality of a traditional chess game between
+                        two local players or a minimax based AI.
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Java
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            JUnit
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/40 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Java Swing
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50
+                                mt-2 z-10 w-full h-w-1/2 sm:w-4/5
+                                md:w-2/3 lg:w-1/3 lg:h-1/3
+                                md:order-first" 
+                                alt="" aria-hidden="true"
+                                loading="lazy" decoding="async"
+                                style="color: transparent"
+                                src="../assets/chess_engine/chess_engine.PNG">
+                  </div>                
+                </li>
+              </ol>
             </div>
           </section>
 
