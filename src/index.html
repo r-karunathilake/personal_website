@@ -8,12 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"/>
 	  <link href="../css/styles.css" rel="stylesheet" />
-
-    <title>Ravindu Karunathilake | Engineer</title>
+    <title>Ravindu Karunathilake</title>
   </head>
 
-  <body class="font-nunito bg-gradient-to-t from-sky-700 min-h-screen
+  <body class="relative font-nunito bg-gradient-to-t from-red-700 min-h-screen
                leading-relaxed antialiased selection:bg-sky-500 selection:text-sky-900">
+    <!-- Background grid -->
+    <div class="absolute -z-20 text-slate-500 top-0 right-0 bottom-0 left-0">
+      <svg class="w-full h-full">
+        <pattern id="pattern-circles" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+          <circle id="pattern-circle" cx="10" cy="10" r="1.6257413380501518" fill="currentColor"></circle>
+        </pattern>
+        <rect id="rect" class="w-full h-full" x="0" y="0" fill="url(#pattern-circles)"></rect>
+      </svg>
+    </div>
 
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div class="lg:flex lg:justify-between lg:gap-4">
@@ -96,7 +104,7 @@
         <!-- Main Section-->
         <main class="pt-20 lg:w-1/2 lg:py-24">  
           <!-- About Me -->
-          <section id="about" class="mb-16 scroll-mt-16" aria-label="About me">
+          <section id="about" class="mb-16 scroll-mt-16 z-10" aria-label="About me">
             <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
                         md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
                         lg:mx-auto lg:top-auto">
