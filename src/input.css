@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .active-nav{
+    .nav-indicator{
+      @apply bg-cyan-300 w-16;
+    }
+    
+    .nav-text{
+      @apply text-cyan-300;
+    }
+  }
+}
+
 :root{
   --primary: 	indigo ;
   --secondary: #1e1e24  ;
