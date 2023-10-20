@@ -14,9 +14,32 @@
   <body class="relative font-nunito bg-gradient-to-b from-zinc-300 from-30% via-zinc-500 via-60%
                to-zinc-700 to-80% animate-gradient min-h-screen 
                leading-relaxed antialiased selection:bg-sky-500 selection:text-sky-900">
+    <!-- Animated blob top left -->
+    <div class="absolute blob w-[800px] h-[800px] -z-30 truncate">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="absolute w-full h-full bg-transparent left-[50px] -top-[80px]">
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+            <stop id="gradientStop2" offset="100%" stop-color="var(--stopColor)" />
+          </linearGradient>
+        </defs>
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="absolute w-full h-full bg-transparent -top-[150px] -left-[150px] -z-[29]">
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+    </div>
+
+    <!-- Animated blob bottom right -->
+    <div class="absolute blob w-[600px] h-[600px] -z-30 bottom-0 right-0 truncate" overflow="hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="absolute w-full h-full bg-transparent -bottom-[150px] -right-[200px]">
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+    </div>
+
     <!-- Background grid -->
-    <div class="absolute -z-20 text-slate-400 top-0 right-0 bottom-0 left-0">
-      <svg class="w-full h-full">
+    <div class="absolute -z-20 text-slate-400 top-0 right-0 bottom-0 left-0 bg-transparent backdrop-blur-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
         <pattern id="pattern-circles" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
           <circle id="pattern-circle" cx="10" cy="10" r="1.6257413380501518" fill="currentColor"></circle>
         </pattern>
@@ -1494,6 +1517,8 @@
                               fadeOut:true,
                             });
   </script>
-  <!-- jQuery script for highlighting navbar elements -->
+  <!-- JavaScript for highlighting navbar elements -->
   <script src="../js/nav_script.js"></script>
+  <!-- JavaScript for generating and animating the gradient blob -->
+  <script src="../js/gradient_blob.js" type="module"></script>
 </html>
