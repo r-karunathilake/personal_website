@@ -48,7 +48,7 @@ paths.forEach( (path) => {
     root.style.setProperty("--startColor", `hsl(${hue + 60}, 100%, 75%)`);
     root.style.setProperty("--stopColor", `hsl(${hue + 180}, 100%, 75%)`);
 
-    hueNoise += noiseOffset / 6;
+    hueNoise += noiseOffset / 10;
     requestAnimationFrame(animate);
   })();
 });
