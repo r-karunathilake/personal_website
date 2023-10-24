@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"/>
+	  <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/lightbox.css" rel="stylesheet" />
+    <link rel="icon" 
+          type="image/svg+xml" 
+          href="data:image/svg+xml,
+          <svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230c1376%22></rect><path d=%22M87.04 72.63L87.04 72.63L95.14 72.63Q95.14 80.94 90.93 84.94Q86.72 88.93 80.67 88.93L80.67 88.93Q70.63 88.93 64.69 81.86Q58.75 74.79 53.78 57.40L53.78 57.40Q50.76 56.86 46.87 55.35L46.87 55.35L46.87 79.65L56.26 79.65L56.26 87.75L27.21 87.75L27.21 79.65L37.69 79.65L37.69 19.49Q24.51 20.46 19.00 24.13Q13.50 27.81 13.50 34.18L13.50 34.18Q13.50 37.42 14.90 39.52Q16.30 41.63 19.00 41.63L19.00 41.63Q24.08 41.63 24.08 33.10L24.08 33.10L32.72 33.10Q32.72 40.12 29.48 44.92Q26.24 49.73 19.00 49.73Q11.77 49.73 8.31 45.19Q4.86 40.66 4.86 34.18L4.86 34.18Q4.86 23.59 14.90 17.33Q24.94 11.07 45.57 11.07Q66.20 11.07 75.60 17.65Q84.99 24.24 84.99 34.77Q84.99 45.30 78.84 51.24Q72.68 57.18 62.96 57.83L62.96 57.83Q66.52 70.25 70.52 75.54Q74.52 80.83 79.59 80.83L79.59 80.83Q82.83 80.83 84.94 78.62Q87.04 76.41 87.04 72.63ZM46.87 19.17L46.87 19.17L46.87 47.35Q51.94 49.73 60.80 49.73L60.80 49.73Q66.96 49.73 71.38 45.68Q75.81 41.63 75.81 35.26L75.81 35.26Q75.81 27.48 69.12 23.32Q62.42 19.17 46.87 19.17Z%22 fill=%22%2300fff6%22></path>
+          </svg>" />
+    <title>Ravindu Karunathilake</title>
+  </head>
+
+  <body class="relative font-nunito bg-gradient-to-b from-[#fff1eb] from-70% 
+             to-[#ace0f9] to-100% min-h-screen leading-relaxed 
+               antialiased selection:bg-purple-800 selection:text-stone-100">
+
+    <!-- Animated blob top left -->
+    <div class="absolute blob xl:w-[1000px] xl:h-[1000px] lg:w-[800px] lg:h-[800px] 
+                md:w-[600px] md:h-[600px] sm:w-[600px] sm:h-[600px] w-[400px] h-[400px] 
+                -z-30 top-0 left-0  max-w-full">
+
+      <svg class="absolute left-[50px] -top-[80px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+            <stop id="gradientStop2" offset="100%" stop-color="var(--stopColor)" />
+          </linearGradient>
+        </defs>
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+
+      <svg class="absolute -top-[400px] -left-[400px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+    </div>
+
+    <!-- Animated blob bottom right -->
+    <div class="absolute blob xl:w-[900px] xl:h-[900px] lg:w-[700px] lg:h-[700px] sm:w-[600px] sm:h-[600px] w-[400px] h-[400px] 
+                -z-30 bottom-0 right-0 overflow-clip">
+      <svg class="absolute -right-[200px] -bottom-[200px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
+        <path d="" fill="url('#gradient')"></path>
+      </svg>
+    </div>
+
+    <!-- Background dot grid -->
+    <div class="absolute -z-20 text-black/20 top-0 right-0 bottom-0 left-0 bg-transparent backdrop-blur-xl">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+        <pattern id="pattern-circles" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+          <circle id="pattern-circle" cx="10" cy="10" r="1.6257413380501518" fill="currentColor"></circle>
+        </pattern>
+        <rect id="rect" class="w-full h-full" x="0" y="0" fill="url(#pattern-circles)"></rect>
+      </svg>
+    </div>
+
+    <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <!-- Sidebar -->
+        <header class="lg:sticky lg:top-0 lg:max-h-screen lg:flex lg:flex-col lg:justify-between lg:w-1/2 lg:py-24">
+          <div id="sidebar-top">
+            <h1 class="text-4xl font-bold mb-3 sm:text-3xl md:text-5xl lg:text-5xl"><a href="#">Ravindu Karunathilake</a></h1>
+            <h2><span id="title" class="text-rose-500 text-xl font-semibold tracking-tight sm:text-base lg:text-2xl"></span></h2> 
+            <p class="mt-3 max-w-xs text-sm leading-normal sm:text-base lg:text-xl lg:max-w-md">Bridging the Hardware-Software Divide</p>
+            <nav class="hidden lg:block" aria-label="Page navigation links">
+              <ul class="mt-10 w-max bg-slate-800/40 rounded-md p-4 text-slate-200">
+                <li>
+                  <a href="#about" class="group flex items-center py-2 active-nav">
+                    <span class="nav-indicator mr-4 h-1 w-8 bg-slate-600 transition-all group-hover:w-16
+                               group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-500 motion-reduce:transition-none"></span>
+                    <span class="nav-text uppercase font-bold tracking-widest group-hover:text-slate-100
+                                 group-focus-visible:text-slate-100 text-xs">About</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#experience" class="group flex items-center py-2">
+                    <span class="nav-indicator mr-4 h-1 w-8 bg-slate-600 transition-all group-hover:w-16
+                               group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-400 motion-reduce:transition-none"></span>
+                    <span class="nav-text uppercase font-bold tracking-widest group-hover:text-slate-100
+                                 group-focus-visible:text-slate-100 text-xs">Experience</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" class="group flex items-center py-2">
+                    <span class="nav-indicator mr-4 h-1 w-8 bg-slate-600 transition-all group-hover:w-16
+                               group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-100 motion-reduce:transition-none"></span>
+                    <span class="nav-text uppercase font-bold tracking-widest group-hover:text-slate-100
+                                 group-focus-visible:text-slate-100 text-xs">Projects</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#photography" class="group flex items-center py-2">
+                    <span class="nav-indicator mr-4 h-1 w-8 bg-slate-600 transition-all group-hover:w-16
+                               group-hover:bg-slate-100 group-focus-visible:w-16 group-focus-visible:bg-slate-100 motion-reduce:transition-none"></span>
+                    <span class="nav-text uppercase font-bold tracking-widest group-hover:text-slate-100
+                                 group-focus-visible:text-slate-100 text-xs">Photography</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          
+          </div>
+
+          <ul id="sidebar-bottom" class="ml-1 mt-8 flex items-center" aria-label="Social Media">
+            <li class="mr-5 text-xs">
+              <span class="sr-only">Github</span>
+              <a class="block hover:text-cyan-300" href="https://www.github.com/r-karunathilake" target="_blank" rel="noreferrer">
+                <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mr-5 text-xs">
+              <span class="sr-only">LinkedIn</span>
+              <a class="block hover:text-cyan-300" href="https://www.linkedin.com/in/ravindu-k" target="_blank" rel="noreferrer">
+                <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mr-5 text-xs">
+              <span class="sr-only">Instagram</span>
+              <a class="block hover:text-cyan-300" href="https://www.instagram.com/casual.optics/" target="_blank" rel="noreferrer">
+                <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="currentColor" aria-hidden="true">
+                  <path d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </header>
+        
+        <!-- Main Section-->
+        <main class="pt-20 lg:w-1/2 lg:py-24">  
+          <!-- About Me -->
+          <section id="about" class="mb-16 scroll-mt-16 z-10" aria-label="About me">
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">About</h2>
+            </div>
+
+            <div id="about-content" class="flex flex-col">
+              <div>
+                <blockquote class="mx-auto w-3/4 text-center text-sm italic font-semibold sm:w-1/2 lg:w-3/4 mb-4">
+                  <p>
+                    "...Simple is better than complex. 
+                    Complex is better than complicated..."
+                  </p>
+                  <p class="font-bold text-right text-slate-600">- The Zen of Python </p>
+                </blockquote>
+              </div>
+
+              <p class="mb-4 text-left">
+                Hey there! 👋 <br>
+                I'm a bit of a mixed bag, with a background that 
+                includes a Bachelor's degree in Electrical Engineering and some 
+                past gigs working on firmware development and testing in the 
+                defense sector. Lately, I've been on a mission to dive headfirst 
+                into the world of software development, aiming to craft code 
+                that's not only concise but also a breeze to unit-test and is 
+                thoroughly documented. On the side, I've dipped my toes into 
+                academic research just to keep things interesting. Right now, 
+                I'm on the lookout for opportunities in the software realm 
+                where I can put my diverse skill set to good use.
+              </p>
+
+              <p class="mb-4 text-left">
+                When I'm not tethered to my desk, you'll likely find me out in 
+                the wild, carving up the slopes on my snowboard, savoring that 
+                crisp mountain air, or peering through my camera lens to 
+                capture the beauty of our pale-blue dot 🌎. So, whether it's in 
+                the world of coding or out in the great outdoors, I'm all 
+                about embracing new experiences and making the most of 
+                every moment.
+              </p>
+
+            </div>
+
+          </section>
+
+          <!-- Experience -->
+          <section id="experience" class="mb-16 scroll-mt-16" aria-label="My work experience">
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
+            </div>
+            
+            <ol class="group/list flex flex-col">
+              <li class="mb-12">
+                <div class="group relative flex flex-col justify-between pb-1 transition md:flex-row
+                            md:flex-wrap md:gap-2 lg:flex-nowrap lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                  <!-- Hover box for large screens -->
+                  <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                              lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/40 
+                              lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                              lg:group-hover:drop-shadow-md
+                              blur-[2px]"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide
+                               text-sky-900 lg:group-hover:text-slate-100 lg:w-1/3" aria-label="September 2021 to April 2023">
+                    Sep 2021 - Apr 2023 (FT)
+                  </header>
+                  
+                  <div class="z-10 lg:w-2/3 ">
+                    <!-- Job Role -->
+                    <h3 class="font-medium leading-snug text-sky-900 lg:group-hover:text-slate-100">
+                      <!-- Job Title and Company -->
+                      <div>
+                        <a class="group/link inline-flex align-baseline leading-tight font-medium 
+                                 group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                  text-base"
+                           href="https://www.ualberta.ca/engineering/electrical-computer-engineering/index.html"
+                           target="_blank" rel="noreferrer" 
+                           aria-label="Researcher at the University of Alberta">
+                          <span>
+                            Graduate Researcher |
+                            <span class="inline-block">
+                              University of Alberta
+                              <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
+                                          group-hover:-translate-y-1 group-hover:translate-x-1 
+                                          group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                          motion-reduce:transition-none ml-1 -translate-y-0.5 -translate-x-1" 
+                                          xmlns="http://www.w3.org/2000/svg" 
+                                          fill="currentColor" 
+                                          viewBox="0 0 16 16" 
+                                          aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </h3>
+
+                    <!-- Job Description -->
+                    <p class="mt-2 text-sm leading-normal">
+                      My research focus was on computer-aided inverse design
+                      for structured-light-based LiDAR. I also conducted an extensive review of 300+ academic papers, 
+                      developed critical Python and MATLAB scripting tools for data analysis, and contributed as a 
+                      teaching assistant. My academic performance resulted in a GPA of 3.9/4.0 after completing 15 
+                      graduate-level credits.
+                    </p>
+                    <!-- Job Skill Tags -->
+                    <ul class="mt-2 flex flex-wrap" aria-label="Key skills and technologies used">
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Python
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          MATLAB
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Research
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          GIT
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          ANSYS Lumerical
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div class="group relative flex flex-col flex-wrap justify-between pb-1 transition md:flex-row
+                            md:flex-wrap md:gap-2 lg:flex-nowrap lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                  <!-- Hover box for large screens -->
+                  <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                              lg:-inset-x-6 lg:block lg:group-hover:bg-sky-800/40 
+                              lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                              lg:group-hover:drop-shadow-md
+                              blur-[2px]"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide
+                               text-sky-900 lg:group-hover:text-slate-100 md:w-1/2 lg:w-1/3" aria-label="May 2019 to August 2021">
+                    May 2019 - Aug 2021 (FT)
+                  </header>
+                  
+                  <div class="z-10 lg:w-2/3">
+                    <!-- Job Role -->
+                    <h3 class="font-medium leading-snug text-sky-900 lg:group-hover:text-slate-100">
+                      <!-- Job Title and Company -->
+                      <div>
+                        <a class="group/link inline-flex align-baseline leading-tight font-medium 
+                               group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                  text-base"
+                           href="https://gdmissionsystems.ca/"
+                           target="_blank" rel="noreferrer" 
+                           aria-label="System Integration Engineer at General Dynamics Mission Systems - Canada">
+                          <span>
+                            System Integration Engineer (EIT) |
+                            <span class="inline-block">
+                              GD Mission Systems - Canada
+                              <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
+                                          group-hover:-translate-y-1 group-hover:translate-x-1 
+                                          group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                          motion-reduce:transition-none ml-1 -translate-y-0.5 -translate-x-1" 
+                                          xmlns="http://www.w3.org/2000/svg" 
+                                          fill="currentColor" 
+                                          viewBox="0 0 16 16" 
+                                          aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </h3>
+
+                    <!-- Job Description -->
+                    <p class="mt-2 text-sm leading-normal">
+                      I excelled in managing intricate requirement dependencies and I played a 
+                      a critical role in addressing high-priority firmware defects, conducting comprehensive code and device log investigations 
+                      for mission-critical devices. A key contribution was the implementation of Python-based automation testing, covering 
+                      80% of product functionality through scalable and unit-testable code, ultimately boosting team productivity. 
+                      Additionally, I had the opportunity to mentor a team of over 5 junior members in test design and acceptance testing through
+                      code reviews and pair-programming.
+                    </p>
+                    <!-- Job Skill Tags -->
+                    <ul class="mt-2 flex flex-wrap" aria-label="Key skills and technologies used">
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Python
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Linux
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          C++
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Agile
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          GIT
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          TCP/IP
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Test Automation
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Robot Framework
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Firmware Development
+                        </div>
+                      </li>
+                      <li class="mr-2 mt-2">
+                        <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                    font-medium leading-4 text-emerald-200">
+                          Firmware Testing
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ol>
+            <!-- Link to full résumé -->
+            <div class="text-center">
+              <a href="../assets/Resume_Ravindu_Karunathilake.pdf" role="button" 
+                 aria-label="Link to my full PDF résumé"
+                 class="group inline-flex items-center font-medium leading-tight
+                        text-slate-200 px-3 py-2 text-sm bg-sky-700 
+                        rounded-full hover:text-cyan-300 
+                        hover:text-[0.9rem] group-hover:shadow-md 
+                        shadow-cyan-950 motion-reduce:transition-none
+                        duration-100"
+                 target="_blank">
+                <span class="whitespace-nowrap">
+                  <span class="border-b border-transparent hover:border-cyan-300 
+                               motion-reduce:transition-none">
+                    View Full Résumé
+                  </span>
+                 
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       aria-hidden="true"
+                       fill="currentColor" 
+                       width="20" height="20" 
+                       fill="currentColor" 
+                       class="inline-block ml-1 h-5 w-5 -translate-y-1 transition-transform
+                              group-hover:translate-x-1 group-hover:-translate-y-1.5
+                              group-focus-visible:translate-x-2 
+                              motion-reduce:transition-none"
+                       viewBox="0 0 17 17">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section id="projects" class="mb-16 scroll-mt-16" aria-label="My projects">
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Projects</h2>
+            </div>
+            
+            <div id="projects-content">
+              <ol class="group/list flex flex-col justify-between align-middle">
+                <!-- Project #1 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                        <!-- Project Header -->
+                        <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                    border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                          <!-- Project Number -->
+                          <div class="border-r-[1px] px-2 text-xs text-center 
+                                      align-text-bottom
+                                      font-semibold">
+                            01
+                          </div>
+                          <!-- Project Name and Link -->
+                          <h3 class="ml-2">       
+                              <div calss="pd-0">
+                                <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                        group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                      text-base"
+                                  href="https://github.com/r-karunathilake/project_showcase/tree/main/Chess_Game"
+                                  target="_blank" rel="noreferrer" 
+                                  aria-label="A Java based chess engine">
+                                  <span>
+                                    Chess Engine
+                                    <span class="inline-block">
+                                      <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                  group-hover:-translate-y-1 group-hover:translate-x-1 
+                                                  group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                                  motion-reduce:transition-none ml-1" 
+                                                  xmlns="http://www.w3.org/2000/svg" 
+                                                  fill="currentColor" 
+                                                  viewBox="0 0 16 16" 
+                                                  aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                        <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </a>
+                            </div>
+                          </h3>
+                        </div>
+
+                        <!-- Project Description -->
+                        <p class="mt-2 text-sm leading-normal">
+                          Java based chess game with a full GUI programmed using
+                          Java Swing toolkit. Main goal of this project was to prac-
+                          tice Java based object-oriented programming (OOP) and
+                          test-driven development (JUnit4) skills. The chess game
+                          provides functionality of a traditional chess game between
+                          two local players or a minimax based AI.
+                        </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Java
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            JUnit
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Java Swing
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            GUI Development
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <a href="../assets/chess_engine/chess_engine.png" data-lightbox="project #1"
+                       class="mt-2 z-10 w-4/5 sm:w-1/2 sm:h-1/2
+                              md:w-1/3 lg:h-1/3
+                              sm:order-first">
+                      <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                  group-hover:border-slate-700/50" 
+                          alt="" aria-hidden="true"
+                          loading="lazy" decoding="async"
+                          style="color: transparent"
+                          src="../assets/chess_engine/chess_engine.png">
+                      </a>
+                  </div>                
+                </li>
+
+                <!-- Project #2 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          02
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                    text-base"
+                                href="https://github.com/r-karunathilake/project_showcase/tree/main/Invoice_Generator"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based PDF invoice generator desktop application">
+                                <span>
+                                  Invoice Generator
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover:-translate-y-1 group-hover:translate-x-1 
+                                                group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        This project involved the creation of a Python based desktop 
+                        application for the creation of professionally formatted
+                        PDF invoice documents. The GUI was implemented with
+                        PyQt6 and the PDF was formatted with fpdf2 Python library.
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            PyQt6
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            GUI Development
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <a href="../assets/invoice_gen/invoice_gen_main_window.png" data-lightbox="project #2"
+                       class="mt-2 z-10 w-4/5 h-w-1/2 sm:w-1/2 sm:h-1/2
+                              md:w-1/3 lg:h-1/3
+                              sm:order-first">
+                      <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50"
+                        alt="" aria-hidden="true"
+                        loading="lazy" decoding="async"
+                        style="color: transparent"
+                        src="../assets/invoice_gen/invoice_gen_main_window.png">
+                      </a>
+                  </div>                
+                </li>
+
+                <!-- Project #3 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          03
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                    text-base"
+                                href="https://gdmissionsystems.ca/"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based audio speech quality analyzer">
+                                <span>
+                                  Speech Quality Analyzer
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover:-translate-y-1 group-hover:translate-x-1 
+                                                group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Python based audio processing software for evaluating audio 
+                        quality (speech transmission index) degradation through
+                        military communication radio relays. This project required
+                        the remote interaction with testing equipment and code
+                        implementation of fundamental signal processing principles 
+                        (e.g. DFT, band filters, MTF, SNR).
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Signal Processing
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Test Automation
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Project Media -->
+                    <div class="mt-2 z-10 w-4/5 h-w-1/2 sm:w-1/2 sm:h-1/2
+                                md:w-1/3 lg:h-1/3
+                                sm:order-first
+                                text-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" 
+                        fill="currentColor" 
+                        class="bi bi-soundwave" 
+                        viewBox="0 0 16 16"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+
+                  </div>                
+                </li>
+
+                <!-- Project #4 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          04
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                    text-base"
+                                href="https://github.com/r-karunathilake/project_showcase/tree/main/Optical_Component_Designer"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="A Python based PDF invoice generator desktop application">
+                                <span>
+                                  Automated Photonic Component Designer
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover:-translate-y-1 group-hover:translate-x-1 
+                                                group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Engineered a Python design pipeline for novel free-form
+                        optical devices (metasurfaces) by interfacing with electro-
+                        magnetic solver API (ANSYS Lumerical), data analysis and
+                        visualization libraries (e.g. matplotlib, pandas, numpy,
+                        scipy).
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Python
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Matplotlib
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            pandas
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            NumPy
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            SciPy
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            MATLAB
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Silicon Photonics
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical FDTD
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical RCWA
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <a href="../assets/optical_comp_designer/field_plot.png" data-lightbox="project #4"
+                      class="mt-2 z-10 w-4/5 h-w-1/2 sm:w-1/2 sm:h-1/2
+                             md:w-1/3 lg:h-1/3
+                             sm:order-first">
+                      <img class="rounded border-2 border-slate-300/10 
+                                  lg:group-hover:border-slate-100/50 
+                                  group-hover:border-slate-700/50"
+                                  alt="" aria-hidden="true"
+                                  loading="lazy" decoding="async"
+                                  style="color: transparent"
+                                  src="../assets/optical_comp_designer/field_plot.png">
+                    </a>
+                  </div>                
+                </li>
+                
+                <!-- Project #5 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          05
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2">
+                            <div calss="pd-0">
+                              <a class="group/link inline-flex align-baseline leading-tight font-semibold 
+                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                    text-base"
+                                href="../assets/bragg_grating/Bragg_grating_design_report.pdf"
+                                target="_blank" rel="noreferrer" 
+                                aria-label="Silicon based Bragg grating filter at 1550 nm">
+                                <span>
+                                  Silicon Bragg Grating Filter Design 
+                                  <span class="inline-block">
+                                    <svg class="inline-block h-4 w-4 shrink-0 transition-transform -translate-x-1 -translate-y-0.5
+                                                group-hover:-translate-y-1 group-hover:translate-x-1 
+                                                group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 
+                                                motion-reduce:transition-none ml-1" 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="currentColor" 
+                                                viewBox="0 0 16 16" 
+                                                aria-hidden="true">
+                                      <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                      <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </a>
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        Bragg gratings filters are a fundamental component for achieving wavelength selective functionality 
+                        in silicon photonics. In this project, the fundamental principles of designing a Bragg
+                        grating on silicon was explored. In addition, a practical filter design operating at 1550 nm is
+                        demonstrated. The proposed filter design was able to achieve a transmission of -52 dB with a
+                        bandwidth of 10 nm at 1550 nm.
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Silicon Photonics 
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical MODE
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            ANSYS Lumerical EME
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Coupled Mode Theory 
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <a href="../assets/bragg_grating/mode_fields.jpg" data-lightbox="project #5"
+                       class="mt-2 z-10 w-3/5 sm:w-1/2 sm:h-1/2
+                              md:w-1/3 lg:h-1/3
+                              sm:order-first">
+                      <img class="rounded border-2 border-slate-300/10 
+                                  lg:group-hover:border-slate-100/50 
+                                  group-hover:border-slate-700/50"
+                                  alt="" aria-hidden="true"
+                                  loading="lazy" decoding="async"
+                                  style="color: transparent"
+                                  src="../assets/bragg_grating/mode_fields.jpg">
+                    </a> 
+                  </div>                
+                </li>
+
+                <!-- Project #6 -->
+                <li class="group mb-12">
+                  <div class="group/item relative flex flex-col justify-between pb-1 transition 
+                              sm:flex-row lg:hover:!opacity-100 lg:group-hover/list:opacity-70">
+                    <!-- Hover box for large screens -->
+                    <div class="absolute -inset-x-4 -inset-y-4 z-11 hidden rounded-md transition
+                                lg:-inset-x-6 lg:block lg:group-hover/item:bg-sky-800/40 
+                                lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.2)]
+                                lg:group-hover/item:drop-shadow-md
+                                blur-[2px]">
+                    </div>
+            
+                    <div class="flex flex-col sm:ml-4 sm:w-1/2 md:w-3/5 lg:w-2/3">
+                      <!-- Project Main Content-->
+                      <div class="z-10 w-full">
+                      <!-- Project Header -->
+                      <div class="text-sky-900 flex justify-start border-b-[1px] 
+                                  border-sky-900 items-center content-start lg:group-hover:text-slate-100">
+                        <!-- Project Number -->
+                        <div class="border-r-[1px] px-2 text-xs text-center 
+                                    align-text-bottom border-sky-900
+                                    font-semibold">
+                          06
+                        </div>
+                        <!-- Project Name and Link -->
+                        <h3 class="ml-2 align-baseline leading-tight font-semibold ">
+                            <div calss="pd-0">
+                              Fabrication of Multilayer and MEMS Devices 
+                          </div>
+                        </h3>
+                      </div>
+
+                      <!-- Project Description -->
+                      <p class="mt-2 text-sm leading-normal">
+                        This project involved hands-on experience with various nanofabrication techniques such as SEM imaging, wet/dry etch-
+                        ing, mask alignment, UV lithography, ellipsometry and profilometry. The devices created include MEMS devices 
+                        such as electrostatic comb drives, rotary actuators and multilayer devices such as via chains. 
+                      </p>
+                      </div>
+
+                      <!-- Project Skill Tags -->
+                      <ul class="flex flex-wrap justify-start z-10" 
+                                  aria-label="Key skills and technologies used">
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Nanofabrication 
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            MEMS Devices
+                          </div>
+                        </li>
+                        <li class="mr-2 mt-2 w-fit">
+                          <div class="flex items-center rounded-full bg-emerald-800/70 px-3 py-1 text-xs
+                                      font-medium leading-4 text-emerald-200">
+                            Multilayer Devices
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Project Media -->
+                    <div class="flex flex-col justify-between
+                                mt-2 z-10 w-3/5 sm:w-1/2 sm:h-1/2
+                                md:w-1/3 lg:h-1/3
+                                sm:order-first">
+                      <a href="../assets/fabrication/spiral_comb_drive.png" data-lightbox="project #6">
+                        <img class="mb-5 rounded border-2 border-slate-300/10 
+                        lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50" 
+                           data-lightbox="project #6"
+                           alt="" aria-hidden="true"
+                           loading="lazy" decoding="async"
+                           style="color: transparent"
+                           src="../assets/fabrication/spiral_comb_drive.png">
+                      </a>
+                           
+                      <a href="../assets/fabrication/via_chains.jpeg" data-lightbox="project #6">
+                        <img class="rounded border-2 border-slate-300/10 
+                                lg:group-hover:border-slate-100/50 
+                                group-hover:border-slate-700/50" 
+                           data-lightbox="project #6"
+                           alt="" aria-hidden="true"
+                           loading="lazy" decoding="async"
+                           style="color: transparent"
+                           src="../assets/fabrication/via_chains.jpeg">
+                      </a>
+                    </div>
+                  </div>                
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Photography -->
+          <section id="photography" class="mb-16 scroll-mt-16" aria-label="My photography">
+            <div class="sticky z-20 w-screen top-0 -mx-6 px-6 mb-4 py-5 bg-transparent backdrop-blur 
+                        md:-mx-12 md:px-12 lg:opacity-0 lg:w-full lg:relative lg:px-0 lg:py-0 
+                        lg:mx-auto lg:top-auto">
+              <h2 class="text-sm font-bold uppercase tracking-widest lg:sr-only">Photography</h2>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery columns-2 gap-px lg:columns-3 md:columns-4">
+              <div>
+                <a href="../assets/gallery/agnus.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/agnus.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/alcatraz.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/alcatraz.jpg">
+                </a>
+              </div>
+              
+              <div>
+                <a href="../assets/gallery/art_gallery.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/art_gallery.jpg">
+                </a>
+              </div>
+              
+              <div>
+                <a href="../assets/gallery/autumn.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/autumn.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/boathouse.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/boathouse.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/cactus.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/cactus.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/columbia.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/columbia.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/ducks.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/ducks.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/elk.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/elk.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/fishing.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/fishing.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/fishing_summer.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/fishing_summer.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/golden.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/golden.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/golden_hour.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/golden_hour.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/green_tree.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/green_tree.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/kayak.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/kayak.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/lighthouse.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/lighthouse.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/lois_hole.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/lois_hole.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/louise.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/louise.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/mist_mountain.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/mist_mountain.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/mountain.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/mountain.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/parliament.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/parliament.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/peace.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/peace.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/rocks.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/rocks.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/skyline.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/skyline.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/snowday.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/snowday.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/stars.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/stars.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/street_lamp.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/street_lamp.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/table.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/table.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/team_room.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/tea_room.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/tree.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/tree.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/walterdale.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/walterdale.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/waterfall.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/waterfall.jpg">
+                </a>
+              </div>
+
+              <div>
+                <a href="../assets/gallery/waves.jpg" data-lightbox="gallery">
+                  <img class="rounded-lg border-[3px] w-full max-w-[400px]
+                  border-slate-300/60 
+                  hover:border-slate-900/40" 
+                      alt="" aria-hidden="true"
+                      loading="lazy" decoding="async"
+                      style="color: transparent"
+                      src="../assets/gallery/waves.jpg">
+                </a>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Footer Section -->
+          <footer class="max-w-md mr-6 text-xs text-slate-100 sm:pb-0 sm:mr-0 bg-slate-900/40 rounded-md h-fit">  
+            <p class="p-2">
+              The design was inspired by the works of
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://brittanychiang.com" 
+                 target="_blank" 
+                 rel="noreferrer">
+              
+                Brittany Chiang.
+              </a>
+              
+              The autotyping 
+              functionality is from the 
+              
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://github.com/mattboldt/typed.js" 
+                 target="_blank" 
+                 rel="noreferrer">
+                <i>typing.js</i> 
+              </a>
+              
+              script by
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://mattboldt.com/" 
+                 target="_blank" 
+                 rel="noreferrer">
+                Matt Boldt.
+              </a>
+              The gradient colors patterns were customized from the works of 
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://georgefrancis.dev/" 
+                 target="_blank" 
+                 rel="noreferrer">
+                George Francis.
+              </a>
+
+              This website was created by me using
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://tailwindcss.com" 
+                 target="_blank" 
+                 rel="noreferrer">
+                TailwindCSS,
+              </a>
+              JavaScript, and HTML with 
+
+              <a class="text-teal-100 font-medium hover:text-cyan-300 focus-visible:text-teal-300" 
+                 href="https://code.visualstudio.com/" 
+                 target="_blank" 
+                 rel="noreferrer">
+                Visual Studio Code.  
+              </a>
+            </p>
+          </footer>
+        </main>   
+        
+        <!-- Jump to the top -->
+        <div>
+          <a class="group text-slate-100 absolute bottom-0 right-0 inline-flex align-baseline leading-tight font-semibold 
+                   text-base lg:mr-20 lg:mb-16"
+             href="#"
+             aria-label="Back to the top the page">
+
+            <span class="inline-block">
+              <svg class="inline-block h-10 w-10 animate-bounce 
+                          fill-[currentColor] transition-all
+                          group-hover:fill-[url('#rocket-gradient')]"
+                          xmlns="http://www.w3.org/2000/svg" 
+                          viewBox="0 0 20 20" 
+                          aria-hidden="true">
+                <defs> 
+                  <lineargradient id="rocket-gradient" gradientunits="userSpaceOnUse" fy="90%"> 
+                    <stop offset="0" style="stop-color:#82D4BB" /> 
+                    <stop offset="1" style="stop-color:#003049" /> 
+                  </lineargradient> 
+                </defs>
+                <path d="M10.175 1.991c.81 1.312 1.583 3.43 1.778 6.819l1.5 1.83A2.5 2.5 0 0 1 14 12.202V15.5a.5.5 0 0 1-.9.3l-1.125-1.5c-.166-.222-.42-.4-.752-.57-.214-.108-.414-.192-.627-.282l-.196-.083C9.7 13.793 8.85 14 8 14c-.85 0-1.7-.207-2.4-.635-.068.03-.133.057-.198.084-.211.089-.411.173-.625.281-.332.17-.586.348-.752.57L2.9 15.8a.5.5 0 0 1-.9-.3v-3.298a2.5 2.5 0 0 1 .548-1.562l.004-.005L4.049 8.81c.197-3.323.969-5.434 1.774-6.756.466-.767.94-1.262 1.31-1.57a3.67 3.67 0 0 1 .601-.41A.549.549 0 0 1 8 0c.101 0 .17.027.25.064.037.017.086.041.145.075.118.066.277.167.463.315.373.297.85.779 1.317 1.537ZM9.5 6c0-1.105-.672-2-1.5-2s-1.5.895-1.5 2S7.172 8 8 8s1.5-.895 1.5-2Z"/>
+                <path d="M8 14.5c.5 0 .999-.046 1.479-.139L8.4 15.8a.5.5 0 0 1-.8 0l-1.079-1.439c.48.093.98.139 1.479.139Z"/>
+              </svg>
+            </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body> 
+
+  <!-- Load library from the CDN -->
+  <!-- This JavaScript code is provided by www.mattboldt.com -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script type="text/javascript">
+    const typed = new Typed('#title', 
+                            {
+                              strings: ['Engineer', 'Developer', 'Photographer', 'System Integrator'],
+                              typeSpeed: 60,
+                              backSpeed: 0,
+                              showCursor: true,
+                              cursorChar: '_',
+                              shuffle: false,
+                              smartBackspace: false,
+                              loop: true,
+                              fadeOut:true,
+                            });
+  </script>
+  <!-- JavaScript for highlighting navbar elements -->
+  <script src="../js/nav_script.js"></script>
+  <!-- JavaScript for generating and animating the gradient blob -->
+  <script src="../js/gradient_blob.js" type="module"></script>
+  <!-- Lightbox script for showing images -->
+  <script src="../js/lightbox-plus-jquery.js"></script>
+</html>
