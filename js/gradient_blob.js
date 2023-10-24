@@ -46,7 +46,7 @@ paths.forEach( (path) => {
     const hue = map(hueNoiseCal, -1, 1, 0, 360);
 
     root.style.setProperty("--startColor", `hsl(${hue + 60}, 100%, 75%)`);
-    root.style.setProperty("--stopColor", `hsl(${hue + 180}, 100%, 75%)`);
+    root.style.setProperty("--stopColor", `hsl(${hue + 120}, 100%, 75%)`);
 
     hueNoise += noiseOffset / 10;
     requestAnimationFrame(animate);
