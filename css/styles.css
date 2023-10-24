@@ -658,6 +658,30 @@ video {
   top: 0px;
 }
 
+.left-\[150px\] {
+  left: 150px;
+}
+
+.left-\[200px\] {
+  left: 200px;
+}
+
+.left-\[400px\] {
+  left: 400px;
+}
+
+.-left-\[400px\] {
+  left: -400px;
+}
+
+.-top-\[200px\] {
+  top: -200px;
+}
+
+.-top-\[400px\] {
+  top: -400px;
+}
+
 .-z-20 {
   z-index: -20;
 }

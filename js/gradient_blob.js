@@ -6,7 +6,7 @@ const paths = document.querySelectorAll('.blob path');
 const root = document.documentElement;
 
 let hueNoise = 0;
-let noiseOffset = 0.001;
+let noiseOffset = 0.002;
 
 const simplex = new SimplexNoise();
 paths.forEach( (path) => {
