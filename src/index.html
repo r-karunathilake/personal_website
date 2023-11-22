@@ -17,16 +17,17 @@
     <title>Ravindu Karunathilake</title>
   </head>
 
-  <body class="relative font-nunito bg-gradient-to-b from-[#fff1eb] from-70% 
-             to-[#ace0f9] to-100% min-h-screen leading-relaxed 
+  <body class="relative font-nunito 
+               bg-gradient-to-b from-cyan-50 from-30% via-[#ace0f9] via-50% to-sky-300 to-80% 
+               min-h-screen leading-relaxed 
                antialiased selection:bg-purple-800 selection:text-stone-100">
 
     <!-- Animated blob top left -->
     <div class="absolute blob xl:w-[1000px] xl:h-[1000px] lg:w-[800px] lg:h-[800px] 
                 md:w-[600px] md:h-[600px] sm:w-[600px] sm:h-[600px] w-[400px] h-[400px] 
-                -z-30 top-0 left-0  max-w-full">
+                -z-30 top-0 left-0  max-w-full blur">
 
-      <svg class="absolute left-[50px] -top-[80px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <svg class="absolute -top-[400px] -left-[400px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
             <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
@@ -35,22 +36,24 @@
         </defs>
         <path d="" fill="url('#gradient')"></path>
       </svg>
-
-      <svg class="absolute -top-[400px] -left-[400px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-        <path d="" fill="url('#gradient')"></path>
-      </svg>
     </div>
 
     <!-- Animated blob bottom right -->
     <div class="absolute blob xl:w-[900px] xl:h-[900px] lg:w-[700px] lg:h-[700px] sm:w-[600px] sm:h-[600px] w-[400px] h-[400px] 
-                -z-30 bottom-0 right-0 overflow-clip">
+                -z-30 bottom-0 right-0 overflow-clip blur">
       <svg class="absolute -right-[200px] -bottom-[200px] bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
-        <path d="" fill="url('#gradient')"></path>
+        <defs>
+          <linearGradient id="gradient2" gradientTransform="rotate(30)">
+            <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+            <stop id="gradientStop2" offset="100%" stop-color="var(--stopColor)" />
+          </linearGradient>
+        </defs>
+        <path d="" fill="url('#gradient2')"></path>
       </svg>
     </div>
 
     <!-- Background dot grid -->
-    <div class="absolute -z-20 text-black/20 top-0 right-0 bottom-0 left-0 bg-transparent backdrop-blur-xl">
+    <div class="absolute -z-20 text-black/20 w-full h-full bg-transparent">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
         <pattern id="pattern-circles" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
           <circle id="pattern-circle" cx="10" cy="10" r="1.6257413380501518" fill="currentColor"></circle>
@@ -215,13 +218,14 @@
                       <!-- Job Title and Company -->
                       <div>
                         <a class="group/link inline-flex align-baseline leading-tight font-medium 
-                                 group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                group-hover:text-blue-600 group-focus:text-blue-600
+                                lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
                                   text-base"
                            href="https://www.ualberta.ca/engineering/electrical-computer-engineering/index.html"
                            target="_blank" rel="noreferrer" 
                            aria-label="Researcher at the University of Alberta">
                           <span>
-                            Graduate Researcher |
+                            Graduate Researcher in Photonics |
                             <span class="inline-block">
                               University of Alberta
                               <svg class="inline-block h-4 w-4 shrink-0 transition-transform group-hover 
@@ -307,7 +311,8 @@
                       <!-- Job Title and Company -->
                       <div>
                         <a class="group/link inline-flex align-baseline leading-tight font-medium 
-                               group-hover:text-cyan-300 group-focus-visible:text-teal-300
+                                group-hover:text-blue-600 group-focus:text-blue-600
+                                lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
                                   text-base"
                            href="https://gdmissionsystems.ca/"
                            target="_blank" rel="noreferrer" 
@@ -481,8 +486,9 @@
                           <h3 class="ml-2">       
                               <div calss="pd-0">
                                 <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                        group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                      text-base"
+                                        group-hover:text-blue-600 group-focus:text-blue-600
+                                        lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                          text-base"
                                   href="https://github.com/r-karunathilake/packet_sniffer"
                                   target="_blank" rel="noreferrer" 
                                   aria-label="A Java based chess engine">
@@ -590,8 +596,9 @@
                           <h3 class="ml-2">       
                               <div calss="pd-0">
                                 <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                        group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                      text-base"
+                                        group-hover:text-blue-600 group-focus:text-blue-600
+                                        lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                          text-base"
                                   href="https://github.com/r-karunathilake/project_showcase/tree/main/Chess_Game"
                                   target="_blank" rel="noreferrer" 
                                   aria-label="A Java based chess engine">
@@ -701,8 +708,9 @@
                         <h3 class="ml-2">
                             <div calss="pd-0">
                               <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                    text-base"
+                                      group-hover:text-blue-600 group-focus:text-blue-600        
+                                      lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                        text-base"
                                 href="https://github.com/r-karunathilake/project_showcase/tree/main/Invoice_Generator"
                                 target="_blank" rel="noreferrer" 
                                 aria-label="A Python based PDF invoice generator desktop application">
@@ -804,8 +812,9 @@
                         <h3 class="ml-2">
                             <div calss="pd-0">
                               <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                    text-base"
+                                      group-hover:text-blue-600 group-focus:text-blue-600          
+                                      lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                        text-base"
                                 href="https://gdmissionsystems.ca/"
                                 target="_blank" rel="noreferrer" 
                                 aria-label="A Python based audio speech quality analyzer">
@@ -910,8 +919,9 @@
                         <h3 class="ml-2">
                             <div calss="pd-0">
                               <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                    text-base"
+                                      group-hover:text-blue-600 group-focus:text-blue-600  
+                                      lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                        text-base"
                                 href="https://github.com/r-karunathilake/project_showcase/tree/main/Optical_Component_Designer"
                                 target="_blank" rel="noreferrer" 
                                 aria-label="A Python based PDF invoice generator desktop application">
@@ -1050,8 +1060,9 @@
                         <h3 class="ml-2">
                             <div calss="pd-0">
                               <a class="group/link inline-flex align-baseline leading-tight font-semibold 
-                                      group-hover:text-cyan-300 group-focus-visible:text-teal-300
-                                    text-base"
+                                        group-hover:text-blue-600 group-focus:text-blue-600  
+                                        lg:group-hover:text-cyan-300 lg:group-focus-visible:text-teal-300
+                                        text-base"
                                 href="../assets/bragg_grating/Bragg_grating_design_report.pdf"
                                 target="_blank" rel="noreferrer" 
                                 aria-label="Silicon based Bragg grating filter at 1550 nm">

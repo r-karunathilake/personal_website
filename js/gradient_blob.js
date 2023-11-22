@@ -6,7 +6,7 @@ const paths = document.querySelectorAll('.blob path');
 const root = document.documentElement;
 
 let hueNoise = 0;
-let noiseOffset = 0.002;
+let noiseOffset = 0.0003;
 
 const simplex = new SimplexNoise();
 paths.forEach( (path) => {
@@ -48,7 +48,7 @@ paths.forEach( (path) => {
     root.style.setProperty("--startColor", `hsl(${hue + 60}, 100%, 75%)`);
     root.style.setProperty("--stopColor", `hsl(${hue + 120}, 100%, 75%)`);
 
-    hueNoise += noiseOffset / 10;
+    hueNoise += noiseOffset / 5;
     requestAnimationFrame(animate);
   })();
 });
